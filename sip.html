@@ -1,0 +1,17 @@
+
+
+<!DOCTYPE html> <html> <head><title>WELCOMING YOU MONIKA GC ON WEBSITE MR.GC NIKHIL SHARE MARKET</tittle><br> <title>Monthly Loan Calculator</title> <script> function calculateMonthlyPayment() { var principal = document.getElementById("principal").value; var interestRate = document.getElementById("interestRate").value / 100 / 12; var loanTerm = document.getElementById("loanTerm").value;
+var monthlyInterestRate = Math.pow(1 + interestRate, loanTerm) * interestRate; var monthlyPayment = principal * monthlyInterestRate / (1 - Math.pow(1 + interestRate, -loanTerm));
+
+document.getElementById("result").innerHTML = "Monthly Payment: $" + monthlyPayment.toFixed(2); } </script>
+
+</head> <body> <h2>Monthly Loan Calculator</h2> <form id="loanForm"> <label for="principal">Loan Amount:</label><br> <input type="number" id="principal" name="principal" min="1"><br>
+<label for="interestRate">Interest Rate (%):</label><br> <input type="number" id="interestRate" name="interestRate" min="1"><br>
+
+<label for="loanTerm">Loan Term (years):</label><br> <input type="number" id="loanTerm" name="loanTerm" min="1"><br>
+
+<button type="button" onclick="calculateMonthlyPayment()">Calculate</button>
+<p>Monika this the sip calculator for MR.nikhil's share market if give him loan  </p>
+<p>it is calculated in dollars </p>
+<br><a>1 dollar=83.43 rupees</a>s
+</form> <p id="result"></p> </body> </html>
